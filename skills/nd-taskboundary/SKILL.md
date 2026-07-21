@@ -1,7 +1,6 @@
 ---
 name: nd-taskboundary
-description: Mark explicit cognitive task boundaries when topics shift. Archive the current task state and begin fresh without full context loss.
-tags: [executive-function, neurodivergent, set-shifting, cognitive-flexibility]
+description: Mark explicit cognitive task boundaries when topics shift or an interruption risks losing state. Save the active outcome, last verified fact, current action, blocker, and exact re-entry step before beginning the new context.
 ---
 
 # Task Boundary — Clean Cognitive Transitions
@@ -32,16 +31,25 @@ Apply this skill when:
 2. **Name the transition** (one line only, before responding to the new request):
    > "↩ Topic shift — moving from [prior task summary] to [new task]. Marking the boundary."
 
-3. **Insert the boundary marker** into the conversation context:
+3. **Save a restartable state before switching:**
+   - active outcome
+   - last verified fact or artifact
+   - current action
+   - blocker or unresolved decision
+   - exact re-entry step
+
+4. **Insert the boundary marker** into the conversation context:
    ```
    [TASK BOUNDARY — new cognitive set begins here]
    Previous task: [one sentence summary]
    New task: [one sentence framing of the new request]
    ```
 
-4. **Begin the new task clean.** Do not carry forward assumptions from the prior task unless explicitly told to. Treat the new task as if starting fresh — while still having access to the conversation history above the boundary.
+5. **Begin the new task clean.** Do not carry forward assumptions from the prior task unless explicitly told to. Treat the new task as if starting fresh — while still having access to the conversation history above the boundary.
 
-5. **If uncertain:** Ask once:
+6. **On return:** Resume from the saved re-entry step rather than reconstructing the conversation. Do not call the transition complete until the saved state can actually restart the work.
+
+7. **If uncertain:** Ask once:
    > "Are you switching tasks, or is this related to [current goal]?"
 
 ## Science basis
@@ -51,3 +59,5 @@ Set shifting (cognitive flexibility) is a core executive function that is common
 Research on set-shifting impairment shows that an explicit environmental cue — a visible marker of transition — significantly reduces the interference from prior task context. The boundary acts as a cognitive anchor: "this is where that stopped and this started."
 
 The boundary is NOT a /clear. The history is preserved. The marker is the signal that old context assumptions no longer apply.
+
+Kolberg and Nadeau's launch points and externalized time, Dawson and Guare's flexibility supports, and Neff and NESTL's transition guidance support making context shifts visible and restartable.

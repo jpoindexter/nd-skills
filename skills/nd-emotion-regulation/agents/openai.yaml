@@ -1,0 +1,7 @@
+interface:
+  display_name: "Emotion Regulation"
+  short_description: "Stabilize high-intensity work without shame."
+  default_prompt: "Use $nd-emotion-regulation to preserve progress and choose one reversible next action."
+
+policy:
+  allow_implicit_invocation: true

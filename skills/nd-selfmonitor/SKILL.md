@@ -1,7 +1,6 @@
 ---
 name: nd-selfmonitor
 description: Before destructive or hard-to-reverse operations, pause to verify the action matches the stated goal. A one-sentence pre-flight check, not a gate.
-tags: [executive-function, neurodivergent, self-monitoring, safety]
 ---
 
 # Self-Monitor — Pre-Action Intent Check
@@ -15,11 +14,13 @@ The self-monitor skill inserts a visible intent-check before high-consequence ac
 ## When to apply
 
 Apply before:
-- Overwriting an existing file (write_file to a path that already exists)
 - Running destructive shell commands (rm, drop, truncate, git reset --hard, force push)
 - Database mutations (DELETE, DROP, UPDATE without WHERE)
 - Committing code (verify the right files are staged, the message matches the work)
 - Closing or deleting items from a tracked backlog
+- Replacing a user-owned file wholesale when the change is hard to review or restore
+
+Do the check silently for routine, reversible in-scope edits. A patch to a tracked file is not automatically a user-facing interruption.
 
 ## Instructions
 
@@ -40,6 +41,7 @@ Examples:
 - The action is irreversible (cannot be undone without effort)
 - The user would reasonably want to know
 - Something feels misaligned
+- A commit or external state change is about to bundle multiple actions; show one check for the batch, not one per file
 
 ## Science basis
 

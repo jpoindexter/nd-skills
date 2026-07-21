@@ -1,0 +1,7 @@
+interface:
+  display_name: "ND Goal Persistence"
+  short_description: "Persist terminal goals through verified completion."
+  default_prompt: "Use $nd-goal-persistence to preserve the terminal condition, continue authorized work across subgoals, and stop only on end-to-end evidence or a genuine blocker."
+
+policy:
+  allow_implicit_invocation: true

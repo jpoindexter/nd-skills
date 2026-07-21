@@ -1,7 +1,6 @@
 ---
 name: nd-setshift
 description: When stuck on the same approach for 3+ iterations, detect the pattern and propose an alternative strategy. Read prior failure logs before attempting a complex fix.
-tags: [executive-function, neurodivergent, cognitive-flexibility, debugging]
 ---
 
 # Set Shifting — Break the Stuck Loop

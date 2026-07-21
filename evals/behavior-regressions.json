@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "id": "retain-positive-and-negative-constraints",
+      "scenario": "Update the presentation only. Do not modify the microsite or delete any source assets.",
+      "skills": ["nd-working-memory", "nd-inhibit"],
+      "requirements": ["constraint ledger", "intended target", "must not"]
+    },
+    {
+      "id": "persist-terminal-goal",
+      "scenario": "Complete every small and medium backlog item. Do not stop after the first batch.",
+      "skills": ["nd-goal-persistence"],
+      "requirements": ["terminal condition", "next safe in-scope unit", "end-to-end"]
+    },
+    {
+      "id": "inspect-before-questioning",
+      "scenario": "The value is in the repository. Inspect it and proceed without asking me to repeat it.",
+      "skills": ["nd-task-initiation", "nd-working-memory"],
+      "requirements": ["discoverable from code", "Inspect those sources first"]
+    },
+    {
+      "id": "do-not-overannounce-routine-edits",
+      "scenario": "Make several reversible tracked-file patches, then one commit.",
+      "skills": ["nd-selfmonitor"],
+      "requirements": ["silently for routine", "one check for the batch"]
+    },
+    {
+      "id": "research-tool-calls-are-not-output",
+      "scenario": "Eight turns list and read files but do not change or test the deliverable.",
+      "skills": ["nd-research-gate"],
+      "requirements": ["do not reset the counter", "actual deliverable"]
+    },
+    {
+      "id": "proxy-test-is-not-terminal-proof",
+      "scenario": "A unit test passes but the user-visible flow has not been executed.",
+      "skills": ["nd-goal-persistence", "nd-task-decomposition"],
+      "requirements": ["lower-layer", "all-executed", "proves only itself"]
+    }
+  ]
+}

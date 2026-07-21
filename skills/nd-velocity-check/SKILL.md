@@ -1,7 +1,6 @@
 ---
 name: nd-velocity-check
 description: Track and surface the ratio of ideas captured vs items shipped. Warn when the capture:ship ratio is high — the ideas-rich/finish-poor pattern made visible.
-tags: [executive-function, neurodivergent, metacognition, productivity]
 ---
 
 # Velocity Check — Making the Ideas:Shipped Ratio Visible

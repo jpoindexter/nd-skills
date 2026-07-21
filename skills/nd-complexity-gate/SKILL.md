@@ -1,7 +1,6 @@
 ---
 name: nd-complexity-gate
 description: Detect complex or multi-step requests and suggest structured planning before acting. Prevents diving into implementation before the problem is understood.
-tags: [executive-function, neurodivergent, planning, organization]
 ---
 
 # Complexity Gate — Plan Before You Act
@@ -39,11 +38,15 @@ Apply this skill when a user request contains two or more of the following signa
 2. **At 2+ signals and plan mode not active:** Before any tool call, emit a one-line note:
    > "⚠ This looks complex ([N] signals). Consider planning the approach before executing — `/planmode` on, or I can outline steps first?"
 
+   If the user already said "just do it," "use your judgment," "do not ask," or supplied a terminal condition, do not turn this note into a question. State that you are structuring the work internally and proceed.
+
 3. **If the user says 'outline steps':** Produce a numbered execution plan with:
    - Each step as a single, concrete, verifiable action
    - Files or commands that will be touched
    - The acceptance criterion for each step
-   - Then ask: "Does this plan look right, or should I adjust before starting?"
+   - Ask "Does this plan look right, or should I adjust before starting?" only when approval of the plan is genuinely required. Otherwise begin the first safe unit.
+
+   Use `$nd-task-decomposition` when dependencies are hidden or the user needs an executable Now/Next/Later surface rather than a high-level plan.
 
 4. **Never block.** If the user says "just do it", proceed immediately. The suggestion is a cognitive scaffold, not a gate.
 

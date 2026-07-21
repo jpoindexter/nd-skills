@@ -1,7 +1,6 @@
 ---
 name: nd-sensory-load
-description: Manage information density and context window as cognitive load. Compress, chunk, and simplify output for sessions where cognitive load is already high.
-tags: [executive-function, neurodivergent, cognitive-load, working-memory, communication]
+description: Reduce language, information, sensory, and uncertainty load while preserving complete information. Use when the user requests direct or scannable communication, explicitly reports overload or low capacity, is navigating an unfamiliar flow, or needs clear expectations and examples.
 ---
 
 # Sensory/Cognitive Load Management — Information at the Right Density
@@ -15,7 +14,7 @@ This skill adjusts output density to match what's actually processable.
 ## When to apply
 
 Apply this skill throughout any session, but especially:
-- When a user has given short, clipped responses (possible load indicator)
+- When the user explicitly asks for direct, short, or scannable responses
 - After a long session (context window filling = cognitive load building)
 - When a user says "this is too much", "slow down", "give me the short version"
 - When the task is emotionally or cognitively taxing
@@ -54,6 +53,16 @@ Apply this skill throughout any session, but especially:
 
 **Response length rule:** The right length is the shortest that's complete. Not the most thorough. Complete. A wall of text is not more helpful than a clear paragraph — it's more expensive.
 
+**Predictability and control:**
+- Lead with the answer or current state.
+- State what changed, what happens now, and what follows.
+- Say whether user input is required or work will continue automatically.
+- Make errors actionable: cause, retained state, and one recovery action.
+- Show a concrete example before abstraction when it shortens comprehension.
+- Offer text alternatives for visual or audio information.
+- Allow the user to change density, tone, pace, or format immediately.
+- Do not infer ability, capacity, or distress from terse writing, typos, silence, or communication style alone.
+
 ## Science basis
 
 Cognitive load theory (Sweller, 1988) distinguishes between intrinsic load (the difficulty of the material itself), extraneous load (irrelevant processing from poor presentation), and germane load (the productive cognitive work of learning). An agent that produces extraneous load — unnecessary length, buried action items, walls of explanation for simple tasks — imposes real costs on the user.
@@ -61,3 +70,5 @@ Cognitive load theory (Sweller, 1988) distinguishes between intrinsic load (the 
 For neurodivergent users with working memory limitations, extraneous load displaces germane load. The person spends working memory processing the format instead of the content. Density-managed output is not "dumbing down" — it's removing friction between the information and the person who needs it.
 
 The context window is itself a working memory analog: what's in it is "available," what's been compressed out requires reconstruction. Managing it proactively is the same skill as managing working memory — externalize, prioritize, don't let important context fall out silently.
+
+NESTL's proactive inclusive-design guidance and Neff and Price's work on sensory load, masking, direct communication, and user-defined accommodation support predictable structure without requiring diagnostic disclosure.

@@ -1,7 +1,6 @@
 ---
 name: nd-hyperfocus-guard
 description: Detect and name hyperfocus sessions that have gone deep on a rabbit hole. Surface the original goal and offer a structured way back.
-tags: [executive-function, neurodivergent, hyperfocus, adhd, attention]
 ---
 
 # Hyperfocus Guard — Naming the Rabbit Hole

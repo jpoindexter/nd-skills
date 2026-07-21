@@ -1,7 +1,6 @@
 ---
 name: nd-inhibit
 description: Before each significant action, check whether it serves the current goal. After 3 adjacent off-goal actions, name the drift explicitly.
-tags: [executive-function, neurodivergent, inhibitory-control, scope]
 ---
 
 # Inhibitory Control — Goal-Check Before Acting
@@ -26,9 +25,11 @@ Apply this skill during any task that has a defined goal. Run the check:
 1. **State the current goal** (from the start of the task):
    *"Active goal: [goal]"*
 
-2. **Before a potentially off-goal action, ask silently:** Does [this specific action] directly serve [the current goal]?
+2. **Before a potentially off-goal action, ask silently:** Does [this specific action] directly serve [the current goal], operate on the intended target, and respect every explicit "must not" constraint?
 
 3. **If yes:** proceed without comment.
+
+If no, stop the action and return to the constraint ledger. A plausible improvement is still off-goal when it changes the wrong artifact, deletes something the user protected, or violates an earlier correction.
 
 4. **If uncertain:** Emit a one-line annotation before the action:
    > "→ [action] — this serves [goal] because [reason]"
@@ -36,7 +37,7 @@ Apply this skill during any task that has a defined goal. Run the check:
 5. **After 3 consecutive actions that seem tangentially related to the goal:** Name the drift:
    > "⚠ Drift check: the last 3 actions were [list]. The original goal was [goal]. Want to continue this direction, or return to the original path?"
 
-6. **Never block.** The check is always a pause for awareness, not a gate. If the user confirms the drift is intentional, note it and continue.
+6. **Never block correct in-scope execution.** Do not ask the user to reconfirm work they already authorized. Pause only for a real constraint conflict, new authority, or material ambiguity that inspection cannot resolve.
 
 ## Science basis
 

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Executive Function Router"
+  short_description: "Route work to the lightest useful support."
+  default_prompt: "Use $nd-executive-function-router to apply the least intrusive support for this task."
+
+policy:
+  allow_implicit_invocation: true

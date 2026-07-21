@@ -1,7 +1,6 @@
 ---
 name: nd-choicereduce
 description: When presenting options or a backlog, show only the top 3. Hidden items are noted but not shown until one choice is completed.
-tags: [executive-function, neurodivergent, decision-making, choice-architecture]
 ---
 
 # Choice Reduction — Three Options Maximum

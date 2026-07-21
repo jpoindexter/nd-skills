@@ -1,0 +1,7 @@
+interface:
+  display_name: "Task Decomposition"
+  short_description: "Turn unclear work into verifiable steps."
+  default_prompt: "Use $nd-task-decomposition to expose the next executable step and finish line."
+
+policy:
+  allow_implicit_invocation: true

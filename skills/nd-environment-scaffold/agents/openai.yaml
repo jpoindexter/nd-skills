@@ -1,0 +1,7 @@
+interface:
+  display_name: "Environment Scaffold"
+  short_description: "Reduce task friction through external structure."
+  default_prompt: "Use $nd-environment-scaffold to redesign this task environment around the point of action."
+
+policy:
+  allow_implicit_invocation: true

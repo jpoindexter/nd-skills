@@ -1,0 +1,7 @@
+interface:
+  display_name: "Functional Minimums"
+  short_description: "Preserve useful outcomes at low capacity."
+  default_prompt: "Use $nd-functional-minimums to define and execute the smallest safe version of this task."
+
+policy:
+  allow_implicit_invocation: true

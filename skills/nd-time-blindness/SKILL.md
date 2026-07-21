@@ -1,7 +1,6 @@
 ---
 name: nd-time-blindness
-description: Give honest, calibrated effort estimates with ND-aware adjustments. Never underestimate. Surface hidden costs. Name the planning fallacy by default.
-tags: [executive-function, neurodivergent, time-blindness, estimation, adhd]
+description: Externalize uncertain time with calibrated best, realistic, and worst ranges, hidden costs, checkpoints, and stopping rules. Use for estimates, open-ended research or refinement, work likely to expand, and tasks where elapsed-time feedback should revise the forecast.
 ---
 
 # Time Blindness — Honest Effort Estimates
@@ -54,6 +53,10 @@ Apply when:
    - High: new architecture, cross-system coordination, significant unknowns
    
    Effort level predicts the chance of time overrun more reliably than initial time estimates.
+
+6. **Name the next checkpoint and its evidence.** For open-ended research, retries, or refinement, include a stop condition.
+
+7. **Revise from elapsed evidence.** Compare forecast with observed time at the checkpoint and update the remaining range. Treat a confident estimate without task data as a hypothesis, not a promise.
 
 ## Science basis
 

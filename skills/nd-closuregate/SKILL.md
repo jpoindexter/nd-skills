@@ -1,7 +1,6 @@
 ---
 name: nd-closuregate
-description: Before starting a new task thread, surface any tasks that are > 50% complete. Ask whether to close one first. One-tap dismiss. Never blocks.
-tags: [executive-function, neurodivergent, task-switching, closure]
+description: Before starting a new task thread, surface any tasks that are more than halfway complete. Ask whether to close one first. One-tap dismiss. Never blocks.
 ---
 
 # Closure Gate — Finish Before You Start

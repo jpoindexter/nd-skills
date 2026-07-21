@@ -1,7 +1,6 @@
 ---
 name: nd-research-gate
 description: Interrupt research spirals after N turns without concrete output. Surface the pattern, name the original goal, and offer a one-question redirect to execution.
-tags: [executive-function, neurodivergent, focus, inhibitory-control]
 ---
 
 # Research Gate — Breaking the Exploration Spiral
@@ -22,8 +21,11 @@ Apply this skill when you notice you have done 8 or more consecutive turns that 
 
 **Without** any turn that produced:
 - A file written to disk
-- A command executed that changed state
-- A commit, test run, or deployment
+- A user-visible artifact
+- A test or command run against the actual deliverable
+- A commit or deployment
+
+Reading, searching, listing files, browsing, and writing another analysis document do not reset the counter merely because a tool or shell command ran.
 
 ## Instructions
 
@@ -33,7 +35,7 @@ Apply this skill when you notice you have done 8 or more consecutive turns that 
 2. **Offer the single redirect question.** Do not continue researching. Ask exactly:
    > "Want to pick one finding and build it now — or continue exploring? (I'll follow your call.)"
 
-3. **On 'build it now':** Ask the user to name the ONE finding to implement. Do not suggest multiple options. Do not ask follow-up questions. Start implementing the chosen finding immediately.
+3. **On 'build it now':** If one finding is already the clear recommendation, implement it immediately. Ask the user to choose only when multiple materially different findings remain and the choice cannot be inferred from their stated goal.
 
 4. **On 'keep exploring':** Reset the counter mentally and continue — but surface it again after another N turns.
 
