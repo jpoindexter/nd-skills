@@ -1,0 +1,7 @@
+interface:
+  display_name: "ND Router"
+  short_description: "Route a task through the ND support skill pack."
+  default_prompt: "Use $nd to select and apply the smallest useful neurodivergent-support skills to the current task, then continue the work."
+
+policy:
+  allow_implicit_invocation: false

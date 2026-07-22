@@ -74,6 +74,6 @@ The research gate now distinguishes discovery commands from concrete output. A r
 
 ## Regression coverage
 
-`evals/behavior-regressions.json` contains six synthetic cases covering constraint retention, terminal persistence, inspect-before-questioning, self-monitor batching, research-output accounting, and proxy-test completion. `scripts/check_behavior_regressions.py` verifies that each case remains represented in the relevant skill instructions.
+`evals/behavior-regressions.json` contains six conversation-derived synthetic cases covering constraint retention, terminal persistence, inspect-before-questioning, self-monitor batching, research-output accounting, and proxy-test completion, plus a manual-router invocation case. `scripts/check_behavior_regressions.py` verifies that each case remains represented in the relevant skill instructions.
 
 These static checks prove rule coverage, not future model compliance. Conversation-level forward evaluation is still needed to measure whether newly generated responses follow the rules reliably.

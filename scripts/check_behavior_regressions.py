@@ -29,6 +29,12 @@ def main() -> int:
             if requirement.casefold() not in corpus:
                 failures.append(f"{case['id']}: missing rule phrase {requirement!r}")
 
+    nd_metadata = ROOT / "skills" / "nd" / "agents" / "openai.yaml"
+    if not nd_metadata.is_file():
+        failures.append("manual-nd-router-executes: missing agents/openai.yaml")
+    elif "allow_implicit_invocation: false" not in nd_metadata.read_text(encoding="utf-8"):
+        failures.append("manual-nd-router-executes: router must remain explicit-only")
+
     if failures:
         print("Behavior regression check failed:", file=sys.stderr)
         for failure in failures:

@@ -1,6 +1,6 @@
 # nd-skills
 
-**ND Skills — 20 agent skills.**
+**ND Skills — 21 agent skills: 20 focused behaviors plus one manual router.**
 
 [![Release](https://img.shields.io/github/v/release/jpoindexter/nd-skills)](https://github.com/jpoindexter/nd-skills/releases)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
@@ -9,12 +9,18 @@ Diagnosis-free neurodivergent-support behaviors for coding agents: executive-fun
 
 Works with any agent that reads Markdown skills, including Claude Code and Codex.
 
-## What's New in v2.0.0
+## What's New
+
+### v2.1.0
+
+- Adds the manual `nd` router for one-command access to the full pack.
+
+### v2.0.0
 
 - Six new skills for routing, functional minimums, decomposition, goal persistence, environmental scaffolding, and emotion regulation.
 - Conversation-derived fixes for constraint loss, premature stopping, false completion, and unnecessary clarification questions.
 - Synchronized always-on instructions for Claude Code and Codex while preserving surrounding configuration.
-- Redacted conversation-audit tooling and six behavior-regression cases.
+- Redacted conversation-audit tooling and deterministic behavior-regression cases.
 
 ## Install
 
@@ -36,6 +42,21 @@ The installer updates its managed blocks on every run, preserves surrounding con
 
 Restart Claude Code or Codex after installation so the refreshed skill inventory and always-on instructions are loaded.
 
+## Always On and Manual Invocation
+
+The installer makes the 20 focused behaviors always-on by synchronizing a managed block into Claude Code and Codex. The block is loaded at the start of new sessions and routes only from explicit task signals; it does not load every full skill body into every response.
+
+Use the `nd` umbrella skill when you want to invoke the router yourself:
+
+```text
+Claude Code: /nd [task]
+Codex:       $nd [task]
+```
+
+Claude Code resolves installed skills directly as slash commands. Current Codex versions use skill mentions or the skills picker; custom slash prompts were removed, so Codex does not support a literal custom `/nd`. Use `$nd` there.
+
+You can also use `/nd status` or `$nd status` to show the active constraint ledger, and `off` to remove optional ND scaffolding for the current task.
+
 ## How It Works
 
 - **Invocable layer:** every folder under `skills/` is a standalone agent skill with trigger metadata and focused instructions.
@@ -47,6 +68,7 @@ Restart Claude Code or Codex after installation so the refreshed skill inventory
 
 | Skill | Covers |
 |---|---|
+| [`nd`](skills/nd/SKILL.md) | Manually routes a task through the smallest relevant subset of the pack. Invoke as `/nd` in Claude Code or `$nd` in Codex. |
 | [`nd-executive-function-router`](skills/nd-executive-function-router/SKILL.md) | Routes explicit task-state barriers to the least intrusive support. |
 | [`nd-functional-minimums`](skills/nd-functional-minimums/SKILL.md) | Preserves safe, useful outcomes when capacity is low. |
 | [`nd-task-decomposition`](skills/nd-task-decomposition/SKILL.md) | Converts oversized work into verifiable Now, Next, Later, and Done units. |

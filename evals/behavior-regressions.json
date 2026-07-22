@@ -36,6 +36,12 @@
       "scenario": "A unit test passes but the user-visible flow has not been executed.",
       "skills": ["nd-goal-persistence", "nd-task-decomposition"],
       "requirements": ["lower-layer", "all-executed", "proves only itself"]
+    },
+    {
+      "id": "manual-nd-router-executes",
+      "scenario": "Explicitly invoke the ND router for an active task.",
+      "skills": ["nd"],
+      "requirements": ["one primary sibling skill", "at most two supporting skills", "execute it"]
     }
   ]
 }
