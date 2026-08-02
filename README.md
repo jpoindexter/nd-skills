@@ -71,7 +71,7 @@ You can also use `/nd status` or `$nd status` to show the active constraint ledg
 | [`nd`](skills/nd/SKILL.md) | Manually routes a task through the smallest relevant subset of the pack. Invoke as `/nd` in Claude Code or `$nd` in Codex. |
 | [`nd-executive-function-router`](skills/nd-executive-function-router/SKILL.md) | Routes explicit task-state barriers to the least intrusive support. |
 | [`nd-functional-minimums`](skills/nd-functional-minimums/SKILL.md) | Preserves safe, useful outcomes when capacity is low. |
-| [`nd-task-decomposition`](skills/nd-task-decomposition/SKILL.md) | Converts oversized work into verifiable Now, Next, Later, and Done units. |
+| [`nd-task-decomposition`](skills/nd-task-decomposition/SKILL.md) | Converts oversized work into verifiable Now, Next, Later, Re-entry, and Done units with restart-safe authority refresh. |
 | [`nd-goal-persistence`](skills/nd-goal-persistence/SKILL.md) | Carries terminal conditions across subtasks until end-to-end evidence or a genuine blocker. |
 | [`nd-environment-scaffold`](skills/nd-environment-scaffold/SKILL.md) | Changes cues, defaults, tools, and support at the point of action. |
 | [`nd-emotion-regulation`](skills/nd-emotion-regulation/SKILL.md) | Protects work and decision quality during explicit emotional intensity. |

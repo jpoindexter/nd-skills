@@ -38,6 +38,12 @@
       "requirements": ["lower-layer", "all-executed", "proves only itself"]
     },
     {
+      "id": "resume-refreshes-state-and-authority",
+      "scenario": "The coding app crashed during a long effectful unit and the user asks to continue.",
+      "skills": ["nd-task-decomposition"],
+      "requirements": ["restart packet", "refresh live state and authority", "one-shot approval"]
+    },
+    {
       "id": "manual-nd-router-executes",
       "scenario": "Explicitly invoke the ND router for an active task.",
       "skills": ["nd"],

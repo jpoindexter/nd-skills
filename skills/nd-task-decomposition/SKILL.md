@@ -17,6 +17,8 @@ Decompose around execution and evidence boundaries, not arbitrary checklist leng
 6. Expose only Now, Next, and Later unless the user requests the full plan.
 7. Re-plan from evidence when a unit fails. Do not repeat the same attempt unchanged.
 8. Reconcile every unit and constraint before a terminal claim. A completed unit, build, or lower-layer test proves only itself.
+9. Before a long or effectful unit, externalize a restart packet: outcome, last verified state, current action, blocker, remaining authority, and exact re-entry step.
+10. On resume, refresh live state and authority before acting. Do not assume volatile context survived or reuse a one-shot approval.
 
 Check the task for:
 
@@ -37,6 +39,7 @@ Outcome: ...
 Now: one concrete action
 Next: one dependent action
 Later: deferred work
+Re-entry: exact restart step and remaining authority
 Done when: executable evidence
 ```
 

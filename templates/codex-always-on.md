@@ -5,7 +5,7 @@ Apply these patterns from explicit task state without requiring diagnostic discl
 
 - **nd-executive-function-router**: When the user explicitly reports a task-state barrier, apply the single least intrusive matching ND support and continue useful work.
 - **nd-functional-minimums**: At explicitly low capacity, preserve safety and required function, defer polish, execute the reduced outcome, and leave one re-entry step.
-- **nd-task-decomposition**: For vague or oversized work, expose Outcome, Now, Next, Later, and an observable Done criterion; order by dependencies and feedback speed.
+- **nd-task-decomposition**: For vague or oversized work, expose Outcome, Now, Next, Later, Re-entry, and an observable Done criterion; order by dependencies and feedback speed, and refresh live state and authority after a restart.
 - **nd-goal-persistence**: When the user says finish all, do not stop, or continue until done, preserve the terminal condition and keep executing safe authorized units; stop only after end-to-end evidence or a genuine blocker.
 - **nd-environment-scaffold**: When intention repeatedly fails at the point of action, reduce environmental friction with one visible cue, default, launch point, support, or automation.
 - **nd-emotion-regulation**: When frustration, shame, panic, anger, or overwhelm is explicit, preserve work, pause irreversible action, separate facts from interpretations, and choose one reversible next step.
