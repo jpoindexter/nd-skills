@@ -1,6 +1,6 @@
 # nd-skills
 
-**ND Skills — 21 agent skills: 20 focused behaviors plus one manual router.**
+**ND Skills — 25 agent skills: 24 focused behaviors plus one manual router.**
 
 [![Release](https://img.shields.io/github/v/release/jpoindexter/nd-skills)](https://github.com/jpoindexter/nd-skills/releases)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
@@ -10,6 +10,11 @@ Diagnosis-free neurodivergent-support behaviors for coding agents: executive-fun
 Works with any agent that reads Markdown skills, including Claude Code and Codex.
 
 ## What's New
+
+### v2.2.0
+
+- Companion pack: `autism-layer` (literal reading, scripts, invitations), `biz-weekly-review` (coach-style week review), `nd-interrupt-budget` (silent by default, a nudge budget the person sets), `nd-inbox-digest` (at most three literal actions, read-only).
+- Ambient signals section: what a host must supply for turn-count triggers, and the working-memory schema gap.
 
 ### v2.1.0
 
@@ -44,7 +49,7 @@ Restart Claude Code or Codex after installation so the refreshed skill inventory
 
 ## Always On and Manual Invocation
 
-The installer makes the 20 focused behaviors always-on by synchronizing a managed block into Claude Code and Codex. The block is loaded at the start of new sessions and routes only from explicit task signals; it does not load every full skill body into every response.
+The installer makes the 24 focused behaviors always-on by synchronizing a managed block into Claude Code and Codex. The block is loaded at the start of new sessions and routes only from explicit task signals; it does not load every full skill body into every response.
 
 Use the `nd` umbrella skill when you want to invoke the router yourself:
 
@@ -89,6 +94,22 @@ You can also use `/nd status` or `$nd status` to show the active constraint ledg
 | [`nd-time-blindness`](skills/nd-time-blindness/SKILL.md) | Externalizes ranges, hidden costs, checkpoints, and stopping rules. |
 | [`nd-velocity-check`](skills/nd-velocity-check/SKILL.md) | Makes the ideas-captured to items-shipped ratio visible. |
 | [`nd-working-memory`](skills/nd-working-memory/SKILL.md) | Re-anchors active context and persists one durable working surface. |
+| [`autism-layer`](skills/autism-layer/SKILL.md) | Reads messages literally in four labelled lines, drafts scripts in the person's voice, phrases every suggestion as an invitation, protects special interests, names masking plainly. |
+| [`biz-weekly-review`](skills/biz-weekly-review/SKILL.md) | Sorts the week into motion vs action, picks one front, gives at most three commitments and one hard recommendation. |
+| [`nd-interrupt-budget`](skills/nd-interrupt-budget/SKILL.md) | Silent by default; unprompted nudges spend a daily budget the person set, one sentence each with a Not now, never during quiet mode. |
+| [`nd-inbox-digest`](skills/nd-inbox-digest/SKILL.md) | Turns an inbox into at most three literal one-line actions, read-only, never sends, lists what the model saw. |
+
+## Ambient signals
+
+Several skills fire on counts: `nd-research-gate` after 8 research turns, `nd-hyperfocus-guard` after 10 turns in one area, `nd-working-memory` every 5 turns. A turn count is the only signal a chat agent has, and it is a weak proxy for what those skills are about (time lost, attention gone elsewhere). A host that supplies three ambient signals can fire them on the real thing:
+
+- **idle time** — seconds since the last keyboard or mouse input
+- **front app** — which application is in front, by name or bundle id, not its window title or URL
+- **clock** — local time, so a rule can say "20 minutes" instead of "8 turns"
+
+Example: Heel, a macOS companion, reads the front app and idle seconds every 5 s with no permission prompt, keeps per-app seconds for the day only, never sends them to the model, and turns them into one-sentence nudges inside `nd-interrupt-budget`. A host without these signals keeps the turn-count triggers as they are.
+
+**Gap:** `nd-working-memory` names one durable working surface but this repo gives it no schema. Proposed shape, one record per task: `outcome`, `target`, `must`, `must_not`, `authority`, `done_evidence`. Not added here; a host that persists it should say where.
 
 ## Source Basis
 
