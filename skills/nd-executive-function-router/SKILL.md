@@ -22,6 +22,10 @@ Match the support to the current task state. Treat state as temporary and user-c
    - time uncertainty: use `$nd-time-blindness`
    - a context switch or interruption: use `$nd-taskboundary`
    - an explicit terminal condition such as finish all or do not stop: use `$nd-goal-persistence`
+   - "what do they mean", "do I need to reply", "how do I say", script, translate, masking, peopled out: use `$autism-layer`
+   - "weekly review", "review my week", "what did I ship": use `$biz-weekly-review`
+   - any unprompted nudge, reminder, or check-in the agent could send: use `$nd-interrupt-budget`
+   - "what needs me" in mail or messages, inbox triage: use `$nd-inbox-digest`
 4. Continue useful work. Do not turn support into an assessment questionnaire.
 5. Let the user override, combine, or dismiss support immediately.
 

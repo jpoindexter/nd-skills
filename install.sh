@@ -127,5 +127,5 @@ else
 fi
 
 echo ""
-echo "Done. All 21 skills and their always-on behaviors are synchronized."
+echo "Done. All 25 skills and their always-on behaviors are synchronized."
 echo "Restart Claude Code / Codex to pick up the changes."

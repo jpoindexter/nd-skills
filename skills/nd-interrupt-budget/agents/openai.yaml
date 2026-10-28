@@ -1,0 +1,7 @@
+interface:
+  display_name: "Interrupt Budget"
+  short_description: "Silent by default; nudges within a budget the person set."
+  default_prompt: "Use $nd-interrupt-budget before sending any unprompted nudge or reminder."
+
+policy:
+  allow_implicit_invocation: true

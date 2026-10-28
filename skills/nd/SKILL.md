@@ -21,6 +21,10 @@ Treat this skill as the manual front door to the pack. The always-on rules remai
    - repeated task friction: `nd-environment-scaffold`
    - research spiral, drift, retry loop, or hyperfocus: the matching gate or guard skill
    - time, choice, transition, or closure friction: the matching focused skill
+   - decoding a message, a reply script, masking, or peopled out: `autism-layer`
+   - a weekly review or what did I ship: `biz-weekly-review`
+   - an unprompted nudge the agent is about to send: `nd-interrupt-budget`
+   - inbox or messages triage: `nd-inbox-digest`
 5. State the selected route in one line, expose the immediate action, and execute it. Do not return a catalog, assessment, or coaching questionnaire.
 
 Use this compact shape when visible scaffolding helps:

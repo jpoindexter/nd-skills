@@ -1,0 +1,7 @@
+interface:
+  display_name: "Inbox Digest"
+  short_description: "At most three literal actions from an inbox, read-only."
+  default_prompt: "Use $nd-inbox-digest to say what in the inbox needs the person, without sending anything."
+
+policy:
+  allow_implicit_invocation: true
