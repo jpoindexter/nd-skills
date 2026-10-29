@@ -1,0 +1,7 @@
+interface:
+  display_name: "Autism Layer"
+  short_description: "Literal reading, scripts, invitations not orders."
+  default_prompt: "Use $autism-layer to read a message literally, draft the script, and phrase every suggestion as an invitation."
+
+policy:
+  allow_implicit_invocation: true

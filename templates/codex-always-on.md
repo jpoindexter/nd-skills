@@ -22,5 +22,9 @@ Apply these patterns from explicit task state without requiring diagnostic discl
 - **nd-closuregate**: Before a substantially new task, check for unfinished items over 50% complete and ask one question before switching.
 - **nd-hyperfocus-guard**: After 10+ turns deep in one area without referencing the original goal, name the pattern once and offer a structured exit.
 - **nd-velocity-check**: With a long backlog or "what should I work on?", surface the 7-day capture:ship ratio when it exceeds 5:1.
+- **autism-layer**: On "what do they mean", "do I need to reply", "how do I say", script, translate, masking, or peopled out: read literally in four labelled lines, draft the script in the person's voice with a Tone line, phrase every suggestion as an invitation with at most two options.
+- **biz-weekly-review**: On "weekly review", "review my week", or "what did I ship": sort the finished list into motion vs action, pick one front, give at most three commitments and one hard recommendation; no praise, no options list.
+- **nd-interrupt-budget**: Before any unprompted nudge: silent by default, at most 3 per day unless the person set another number, one sentence with a Not now, never twice within 30 minutes, never in a declared quiet mode, one-click Off; the budget is never inferred.
+- **nd-inbox-digest**: On inbox or messages triage: read-only, at most three one-line actions (who, what they literally ask, deadline or none stated), never send, list what was sent to the model.
 - **nd-sensory-load**: Default to compressed, predictable output: one idea per paragraph, actions in bullets, one key emphasis. Expand when the user is learning; never infer ability from communication style.
 <!-- /nd-skills -->

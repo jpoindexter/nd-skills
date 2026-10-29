@@ -1,0 +1,7 @@
+interface:
+  display_name: "Weekly Review"
+  short_description: "Coach-style weekly review from the finished list."
+  default_prompt: "Use $biz-weekly-review to sort the week into motion vs action, pick one front, and give at most three commitments."
+
+policy:
+  allow_implicit_invocation: true
